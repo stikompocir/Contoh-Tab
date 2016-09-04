@@ -13,10 +13,11 @@ import com.sidiq.codelab.sampletabapplication.fragment.Tab2Fragment;
 public class TabFragmentPagerAdapter extends FragmentPagerAdapter {
     //nama tab nya
     String[] title = new String[]{
-            "Tab 1", "Tab 2"
+            "Fragment 1", "Fragment 2"
     };
 
     public TabFragmentPagerAdapter(FragmentManager fm) {
+
         super(fm);
     }
 
