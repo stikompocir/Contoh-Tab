@@ -51,26 +51,23 @@ public class Tab1Fragment extends Fragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-      super.onActivityCreated(savedInstanceState);
-       btnHitung.setOnClickListener(new View.OnClickListener() {
-				@Override
-        public void onClick(View view) {
+      	super.onActivityCreated(savedInstanceState);
+       	btnHitung.setOnClickListener(new View.OnClickListener() {
+	@Override
+       	public void onClick(View view) {
           try{
-
-
             String lebar = edtLebar.getText().toString().trim();
-              String panjang = edtPanjang.getText().toString().trim();
+            String panjang = edtPanjang.getText().toString().trim();
 
 
             Double p = Double.parseDouble(panjang);
-              Double l = Double.parseDouble(lebar);
+            Double l = Double.parseDouble(lebar);
 
-			Double luas = p * l;
-
-			txtLuas.setText("Luas : " + luas);
-			} catch(NumberFormatException nfe){
-			    nfe.printStackTrace();
-          }
+		Double luas = p * l;
+		txtLuas.setText("Luas : " + luas);
+	   } catch(NumberFormatException nfe){
+	    nfe.printStackTrace();
+           }
         }
       });
     }
